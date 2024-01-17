@@ -33,7 +33,7 @@ time.sleep(5)
 driver.get("https://www.instagram.com/daily_otis/?hl=en")
 time.sleep(3)
 
-photo = driver.find_element(By.CSS_SELECTOR, )
+photo = driver.find_element(By.CSS_SELECTOR, 'article > div a')
 
 actions = ActionChains(driver)
 actions.double_click(photo).perform()
